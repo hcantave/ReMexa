@@ -44,7 +44,6 @@ contract Remittance {
         payable
     {
         emit TransacConfirmed();
-        receiver = msg.sender;
         state = State.Locked;
     }
     function withdraw() public {
@@ -63,11 +62,12 @@ contract Remittance {
 
     function confirmReceived()
         public
+        onlySender
         inState(State.Locked)
     {
         emit MoneyReceived();
         state = State.Inactive;
-        receiver.transfer(value);
+        //receiver.transfer(value);
         sender.transfer(address(this).balance);
     }
 }
