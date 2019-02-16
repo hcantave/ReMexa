@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-
+import TransferForm from "./TransferForm";
 class MainPage extends Component {
   constructor(props) {
     super(props);
@@ -28,6 +28,10 @@ class MainPage extends Component {
         <a href="auth/logout">logout</a>
         <button>Transfer Money</button>
         <button>Withdraw</button>
+
+        <br />
+
+        <TransferForm />
       </div>
     );
   }
