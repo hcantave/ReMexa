@@ -1,12 +1,14 @@
 const express = require("express");
 const app = express();
 
+//getting mongoose and data base
 const mongoose = require("mongoose");
 const keys = require("./config/dev");
 mongoose.connect(
   keys.mongoURI,
   { useNewUrlParser: true }
 );
+require("./models/users");
 console.log("Mongo is up");
 
 //house keeping of getting json to work
