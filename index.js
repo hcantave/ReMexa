@@ -10,6 +10,7 @@ mongoose.connect(
   { useNewUrlParser: true }
 );
 require("./models/users");
+require("./services/passport");
 
 //house keeping of getting json to work
 const bodyParser = require("body-parser");

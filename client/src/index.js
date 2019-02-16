@@ -3,15 +3,15 @@ import ReactDOM from "react-dom";
 import MainPage from "./MainPage";
 import LoginSignup from "./LoginSignup";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import { Switch } from "react-router";
 
 ReactDOM.render(
   <div>
     <BrowserRouter>
       <Switch>
-        <Route path="/MainPage" component={MainPage} />
-        <Route path="/" component={LoginSignup} />
+        <Route path="/MainPage" exact component={MainPage} />
+        <Route path="/" exact component={LoginSignup} />
       </Switch>
     </BrowserRouter>
   </div>,

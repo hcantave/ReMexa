@@ -1,3 +1,6 @@
+const passport = require("passport");
+const mongoose = require("mongoose");
+const User = mongoose.model("users");
 module.exports = app => {
   app.get("/auth/current_user", (req, res) => {
     res.send(req.user);
@@ -34,19 +37,19 @@ module.exports = app => {
     const username = req.body.username;
     const password = req.body.password;
     User.findOne({
-      userName: username
+      username: username
     }).then(existingUser => {
       if (existingUser) {
         res.send("UserName already existed");
       } else {
         console.log("creating new");
         new User({
-          userName: username,
+          username: username,
           password: password
         })
           .save()
           .then(user =>
-            res.send({ username: user.userName, password: password })
+            res.send({ username: user.username, password: user.password })
           );
       }
     });
