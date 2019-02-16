@@ -9,7 +9,6 @@ mongoose.connect(
   { useNewUrlParser: true }
 );
 require("./models/users");
-console.log("Mongo is up");
 
 //house keeping of getting json to work
 const bodyParser = require("body-parser");
