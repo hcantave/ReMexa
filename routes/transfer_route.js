@@ -24,7 +24,7 @@ module.exports = app => {
   app.post("/transfer/submitTransfer", requireLogin, async (req, res) => {
     const recipient = req.body.order.recipient;
     //    const sending = req.order.sending;
-    const amount = req.body.order.amount;
+    const amount = Number(req.body.order.amount);
     const namount = 0 - amount;
     const transactionlist = mongoose.model(req.user.id, transactionSchema);
     const recipientInfo = await User.findOne({ username: recipient });
@@ -32,8 +32,8 @@ module.exports = app => {
       recipientInfo.id,
       transactionSchema
     );
-    const UserupdatedA = req.user.balance - amount;
-    const RecipientupdateDA = recipientInfo.balance + amount;
+    const UserupdatedA = Number(req.user.balance) - amount;
+    const RecipientupdateDA = Number(recipientInfo.balance) + amount;
 
     await User.findOneAndUpdate(
       { username: req.user.username },

@@ -31,9 +31,10 @@ class TransferForm extends Component {
         this.setState({
           recipient: "",
           amount: 0,
-          message: "You can continue to transfer money",
+          message: "",
           verified: false
         });
+        window.location.href = "/MainPage";
       } else {
         this.setState({ message: "something very wrong! Contact us." });
       }
