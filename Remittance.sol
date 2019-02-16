@@ -54,10 +54,10 @@ contract Remittance {
         _;
     }
     
-    modifier onlyReceiver () {
-        require(receiver == msg.sender);
-        _;
-    }
+    // modifier onlyReceiver () {
+    //     require(receiver == msg.sender);
+    //     _;
+    // }
     
     // **** use events to pass along return values from contract to frontend ****
     // stores all the data contained when user sends funds
