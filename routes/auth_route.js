@@ -3,7 +3,11 @@ const mongoose = require("mongoose");
 const User = mongoose.model("users");
 module.exports = app => {
   app.get("/auth/current_user", (req, res) => {
-    res.send(req.user);
+    const resdata = {
+      username: req.user.username,
+      balance: req.user.balance
+    };
+    res.send(resdata);
   });
 
   app.get("/auth/logout", (req, res) => {
@@ -45,7 +49,8 @@ module.exports = app => {
         console.log("creating new");
         new User({
           username: username,
-          password: password
+          password: password,
+          balance: 0
         })
           .save()
           .then(user =>
