@@ -67,31 +67,30 @@ class TransferForm extends Component {
   render() {
     return (
       <div>
-        <p>
-          <form onSubmit={this.onSubmit}>
-            <label>Recipient</label>
-            <input
-              type="text"
-              name="recipient"
-              value={this.state.recipient}
-              onChange={this.onChange}
-              required
-            />
-            <label>Amount</label>
-            <input
-              type="number"
-              name="amount"
-              value={this.state.amount}
-              onChange={this.onChange}
-              required
-            />
-            <button onClick={this.verify}>Verify</button>
-            <button type="submit">submit</button>
-            <button>Cancel</button>
-            <br />
-            {this.state.message}
-          </form>
-        </p>
+        <br />
+        <form onSubmit={this.onSubmit}>
+          <label>Recipient</label>
+          <input
+            type="text"
+            name="recipient"
+            value={this.state.recipient}
+            onChange={this.onChange}
+            required
+          />
+          <label>Amount</label>
+          <input
+            type="number"
+            name="amount"
+            value={this.state.amount}
+            onChange={this.onChange}
+            required
+          />
+          <button onClick={this.verify}>Verify</button>
+          <button type="submit">submit</button>
+          <button>Cancel</button>
+          <br />
+          {this.state.message}
+        </form>
       </div>
     );
   }
