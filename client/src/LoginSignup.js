@@ -89,6 +89,7 @@ class LoginSignup extends Component {
   render() {
     return (
       <div className="container" className ="col-md-4 col-md-offset-4" id="wrap">
+        <img src={require('/mexicoflag.png')} height="60" width="60"></img>
         <form onSubmit={this.onSubmitLogin} id="login-page">
         <h2 id="intro-head"> ReMexa </h2>
         <Spacer amount={8} />
