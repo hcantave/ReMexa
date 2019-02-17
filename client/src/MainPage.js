@@ -32,25 +32,29 @@ class MainPage extends Component {
   showTrans = () => {
     //here button handling
     document.getElementById("withdraw").style.display = "none";
-    document.getElementById("trans").style.display = "block";
+    document.getElementById("form").style.display = "block";
   };
 
   showWith = () => {
     //here button handling
     document.getElementById("withdraw").style.display = "block";
-    document.getElementById("trans").style.display = "none";
+    document.getElementById("form").style.display = "none";
   };
 
   render() {
     return (
       <div className="col-md-4 col-md-offset-4" align="center">
-        <h1 align="center">Hello {this.state.username}</h1>
+        <h1 align="center" id="prompt">
+          Hello, {this.state.username}!
+        </h1>
         <Spacer amount={8} />
-        <p align="center">
-          Your current balance is {this.state.balance} dollars
+        <p align="center" id="mssg">
+          Your current balance is ${this.state.balance}
         </p>
 
-        <a href="auth/logout">logout</a>
+        <a href="auth/logout" type="button" className="btn btn-link">
+          logout
+        </a>
         <button
           type="button"
           className="btn btn-outline-success"

@@ -1,16 +1,16 @@
-#prompt{
-        padding-left: 350px;
-        text-align: center;
-        font-size: 30px;
-        white-space: nowrap;
+#prompt {
+  padding-left: 350px;
+  text-align: center;
+  font-size: 30px;
+  white-space: nowrap;
 }
 
-#mssg{
-    margin: auto;
-    width: 60%;
-    border: 4 px dotted #73AD21;
-    padding-left: 250px;
-    align-self: center;
-    white-space: nowrap;
-    font-size: 20px;
+#mssg {
+  margin: auto;
+  width: 60%;
+  border: 4 px dotted #73ad21;
+  padding-left: 250px;
+  align-self: center;
+  white-space: nowrap;
+  font-size: 20px;
 }

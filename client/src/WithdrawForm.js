@@ -63,6 +63,10 @@ class WithdrawForm extends Component {
     const rp = diff / 1000000000000000000;
     const yeild = bitso * rp;
     console.log(pamount - yeild);
+    this.setState({
+      message:
+        "Your transaction is complete! Your friend got " + yeild + " pesos!"
+    });
   };
   render() {
     return (
