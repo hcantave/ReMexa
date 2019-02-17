@@ -29,7 +29,14 @@ body {
     white-space: nowrap;
 }
 
-#buttons{
+
+#loginbutton{
+    padding-left: 320px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#signupbutton{
     padding-left: 300px;
     text-align: center;
     white-space: nowrap;
