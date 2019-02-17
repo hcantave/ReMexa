@@ -90,28 +90,30 @@ class LoginSignup extends Component {
     return (
       <div className="container" className ="col-md-4 col-md-offset-4" id="wrap">
         <form onSubmit={this.onSubmitLogin} id="login-page">
-          <h2 className="form-signin-heading" align='center'>Please Login to continue into MexRemit</h2>
-          <label>Username</label>
+          <h2 className="form-signin-heading" align='center' id="heading">Please Login to continue into MexRemit</h2>
+          <label id="heading">Username</label>
           <input
             placeholder="username"
             name="username"
             value={this.state.username}
             onChange={this.onChange}
+            id="heading"
             required
           />
-          <label>Password</label>
+          <label heading="heading">Password</label>
           <input
             type="password"
             placeholder="Password"
             name="password"
+            id="heading"
             value={this.state.password}
             onChange={this.onChange}
             required
           />
-          <button type="submit" className="btn btn-success" id="button" >Login</button> {"  "}
+          <button type="submit" className="btn btn-success" id="heading" >Login</button> {"  "}
           <Spacer amount={4} />
           <p>
-            <button onClick={this.showSignUpForm} type ="button" id="button" className="btn btn-success btn-lg">Sign up now</button> 
+            <button onClick={this.showSignUpForm} type ="button" id="heading" className="btn btn-success btn-lg">Sign up now</button> 
           </p>
         </form>
         <form
