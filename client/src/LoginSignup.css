@@ -33,18 +33,20 @@ body {
 #loginbutton{
     padding-left: 330px;
     text-align: center;
+    margin:auto;
     white-space: nowrap;
 }
 
 #signupbutton{
     padding-left: 300px;
+    margin:auto;
     text-align: center;
     white-space: nowrap;
 }
 
 #usercred{
     margin: auto;
-    padding-left: 300px;
+    padding-left: 295px;
     text-align: center;
     white-space: nowrap;
 }
