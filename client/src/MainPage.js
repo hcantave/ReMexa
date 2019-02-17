@@ -32,10 +32,10 @@ class MainPage extends Component {
   render() {
     return (
       <div className="col-md-4 col-md-offset-4" align="center">
-        <h1 align="center" id="prompt">Hello {this.state.username}</h1>
+        <h1 align="center" id="prompt">Hello, {this.state.username}!</h1>
         <Spacer amount={8} />
         <p align="center" id="mssg">
-          Your current balance is {this.state.balance} dollars
+          Your current balance is ${this.state.balance} 
         </p>
 
         <a href="auth/logout"type="button" className="btn btn-link">logout</a>

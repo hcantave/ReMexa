@@ -79,7 +79,7 @@ class TransferForm extends Component {
         <div id="form">
         <form onSubmit={this.onSubmit} id="mssg">
         <div id="rec">
-          <label>Recipient</label>
+          <label>Recipient :  </label>
             <input
             type="text"
             name="recipient"
@@ -89,7 +89,7 @@ class TransferForm extends Component {
             />
         </div>
         <div id = "am">
-          <label>Amount</label>
+          <label>Amount :  </label>
           <input
             type="number"
             name="amount"
@@ -102,7 +102,7 @@ class TransferForm extends Component {
         <div id="buts">
           <button onClick={this.verify} type="button" class= "btn btn-success">Verify</button>
           {"        "}
-          <button type="submit" class="btn btn-success">submit</button>
+          <button type="submit" class="btn btn-success">Submit</button>
           <Spacer amount={8} /> 
           <button type="button" class="btn btn-outline-danger">Cancel</button>
         </div>
