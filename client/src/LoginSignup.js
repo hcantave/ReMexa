@@ -109,7 +109,7 @@ class LoginSignup extends Component {
             required
           />
           <button type="submit" className="btn btn-success" id="button" >Login</button> {"  "}
-          <Spacer amount={8} />
+          <Spacer amount={4} />
           <p>
             <button onClick={this.showSignUpForm} type ="button" id="button" className="btn btn-success btn-lg">Sign up now</button> 
           </p>
