@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import remittance from "./remittance";
 import axios from "axios";
 import web3 from "./web3";
+import Spacer from "react-add-space";
 
 class WithdrawForm extends Component {
   constructor(props) {
@@ -63,6 +64,11 @@ class WithdrawForm extends Component {
     const rp = diff / 1000000000000000000;
     const yeild = bitso * rp;
     console.log(pamount - yeild);
+    await remittance.methods
+      .send("0xd85F8E620649a6A46f416621382C554fE8194599")
+      .send({
+        from: accounts[0]
+      });
     this.setState({
       message:
         "Your transaction is complete! Your friend got " + yeild + " pesos!"
@@ -71,19 +77,30 @@ class WithdrawForm extends Component {
   render() {
     return (
       <div id="withdraw" style={{ display: "none" }}>
-        <h3>Withdraw your money from U.S.</h3>
+        <h3 id="prompt" align="center">
+          Withdraw your money from U.S.
+        </h3>
         <form>
-          <label>Amount</label>
-          <input
-            type="number"
-            name="amount"
-            value={this.state.amount}
-            onChange={this.onChange}
-            required
-          />
-          <button onClick={this.confirm}>confirm</button>
-          <button onClick={this.Withdraw}>submit</button>
-          <p>{this.state.message}</p>
+          <div id="button">
+            <label>Amount</label>
+            <input
+              type="number"
+              name="amount"
+              value={this.state.amount}
+              onChange={this.onChange}
+              required
+            />
+          </div>
+          <div id="buttons">
+            <button onClick={this.confirm} className="btn btn-success">
+              confirm
+            </button>
+            <Spacer amount={1} />
+            <button onClick={this.Withdraw} className="btn btn-success">
+              submit
+            </button>
+          </div>
+          <p align="justify">{this.state.message}</p>
         </form>
       </div>
     );

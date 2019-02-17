@@ -1,0 +1,24 @@
+#buttons {
+  margin: auto;
+  padding-left: 10px;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+#button {
+  margin: auto;
+  padding-left: 10px;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+#prompt {
+  padding-left: 140px;
+  text-align: center;
+  font-size: 30px;
+  white-space: nowrap;
+  margin: auto;
+  font-size: 60px;
+}
