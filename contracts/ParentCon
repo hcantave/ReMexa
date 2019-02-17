@@ -1,0 +1,50 @@
+pragma solidity ^0.5.1;
+
+   contract Contract {
+        address payable parent;
+
+        constructor ()  public payable  {
+            parent = msg.sender;
+        }
+        
+        function executePayment(address payable recipient) public {
+            recipient.send(address(this).balance);
+            selfdestruct(parent);                
+        }
+    }
+    
+contract ParentCon {
+   address public mgr;
+   address public recipient;
+   address payable newAddress;
+   address[] newContracts;
+
+   
+   
+   constructor(address manager) public payable {
+       mgr = manager;
+   }
+   
+   function createContract (uint amount) private {
+        Contract newContract = payable new Contract();
+        newAddress = address(newContract);
+        newAddress.transfer(amount);
+        newContracts.push(newAddress);
+    } 
+
+
+   function getPoolBalance() public view returns(uint) {
+       return address(this).balance;
+   }
+
+   function send(address server, uint reqAmount) public returns(address) {
+       require(msg.sender == mgr, "Unauthorized to send");
+       createContract(reqAmount);
+       return newContracts[newContracts.length-1];
+   }
+   
+   
+}
+
+
+
