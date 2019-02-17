@@ -18,12 +18,11 @@ body {
 #prompt{
     border: 2 px solid green;
     padding: auto;
-    spacing: auto;
+    border-spacing: auto;
     align-content: center;
 }
 
 #intro {
-    padding-left: 250px;
-    align-content: center;
+    padding-left: 350px;
     text-align: center;
 }
