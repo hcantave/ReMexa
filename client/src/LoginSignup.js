@@ -100,9 +100,9 @@ class LoginSignup extends Component {
             onChange={this.onChange}
             required
           />
-          <button type="submit" class="btn btn-primary bg-success" >Login</button>
+          <button type="submit" class="btn btn-success">Login</button>
           <p>
-            <button onClick={this.showSignUpForm} class="btn btn-primary bg-success" color="green">Sign up</button> now!
+            <button onClick={this.showSignUpForm} class="btn btn-success">Sign up</button> now!
           </p>
         </form>
         <form
