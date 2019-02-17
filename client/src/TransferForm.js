@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom';
 import axios from "axios";
 import {Button } from 'react-bootstrap';
+import Spacer from 'react-add-space';
 
 class TransferForm extends Component {
   constructor(props) {
@@ -93,6 +94,7 @@ class TransferForm extends Component {
           />
           <button onClick={this.verify} type="button" class= "btn btn-success">Verify</button>
           <button type="submit" class="btn btn-success">submit</button>
+          <Spacer amount={8} /> 
           <button type="button" class="btn btn-outline-danger">Cancel</button>
           <br />
           {this.state.message}

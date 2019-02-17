@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom';
 import axios from "axios";
 import TransferForm from "./TransferForm";
+import Spacer from 'react-add-space';
 
 
 class MainPage extends Component {
