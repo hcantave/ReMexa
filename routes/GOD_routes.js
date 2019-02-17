@@ -7,7 +7,7 @@ module.exports = app => {
     await User.find({}, (err, users) => {
       users.map(user => {
         const netEarning =
-          Number(user.balance * 0.01) + Number(user.netEarning);
+          Number(user.balance) * 0.01 + Number(user.netEarning);
         User.findOneAndUpdate(
           { username: user.username },
           { netEarning: netEarning },
@@ -25,7 +25,8 @@ module.exports = app => {
     await User.find({}, (err, users) => {
       users.map(user => {
         const netEarning =
-          Number(user.balance * 0.03) + Number(user.netEarning);
+          Number(user.balance) * 0.03 + Number(user.netEarning);
+        console.log(user);
         const newBalance = Number(user.balance) + netEarning;
         User.findOneAndUpdate(
           { username: user.username },
