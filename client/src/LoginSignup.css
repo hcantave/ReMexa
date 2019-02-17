@@ -23,7 +23,7 @@ body {
 }
 
 #intro {
-    padding-left: 250px;
+    padding: auto;
     text-align: center;
     font-size: 30px;
     white-space: nowrap;
