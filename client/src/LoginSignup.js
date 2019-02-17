@@ -90,7 +90,7 @@ class LoginSignup extends Component {
     return (
       <div className="container" className ="col-md-4 col-md-offset-4" id="wrap">
         <form onSubmit={this.onSubmitLogin} id="login-page">
-          <h2 className="form-signin-heading" align='center' id="intro">Please Login to continue into MexRemit</h2>
+          <h2 className="form-signin-heading" id="intro">Please Login to continue into MexRemit</h2>
           <label>Username</label>
           <input
             placeholder="username"
