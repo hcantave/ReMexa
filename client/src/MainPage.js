@@ -6,7 +6,6 @@ import ReactDOM from "react-dom";
 import axios from "axios";
 import TransferForm from "./TransferForm";
 import Spacer from "react-add-space";
-import './MainPage.css';
 import WithdrawForm from "./WithdrawForm";
 
 class MainPage extends Component {
@@ -30,30 +29,51 @@ class MainPage extends Component {
     this.setState({ username: user.username, balance: user.balance });
   }
 
+  showTrans = () => {
+    //here button handling
+    document.getElementById("withdraw").style.display = "none";
+    document.getElementById("trans").style.display = "block";
+  };
+
+  showWith = () => {
+    //here button handling
+    document.getElementById("withdraw").style.display = "block";
+    document.getElementById("trans").style.display = "none";
+  };
+
   render() {
     return (
       <div className="col-md-4 col-md-offset-4" align="center">
-        <h1 align="center" id="prompt">Hello, {this.state.username}!</h1>
+        <h1 align="center">Hello {this.state.username}</h1>
         <Spacer amount={8} />
-        <p align="center" id="mssg">
-          Your current balance is ${this.state.balance} 
+        <p align="center">
+          Your current balance is {this.state.balance} dollars
         </p>
 
-        <a href="auth/logout"type="button" className="btn btn-link">logout</a>
-        <Spacer amount={1} />
-        <button type="button" className="btn btn-outline-success">
+        <a href="auth/logout">logout</a>
+        <button
+          type="button"
+          className="btn btn-outline-success"
+          onClick={this.showTrans}
+        >
           Transfer Money
         </button>
         <Spacer amount={8} />
-        <button type="button" className="btn btn-outline-success">
+        <button
+          type="button"
+          className="btn btn-outline-success"
+          onClick={this.showWith}
+        >
           Withdraw
         </button>
 
         <br />
 
         <TransferForm />
-        <br/>
-        <WithdrawForm/>
+
+        <br />
+
+        <WithdrawForm />
       </div>
     );
   }

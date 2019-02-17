@@ -1,12 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
+import "bootstrap/dist/css/bootstrap.min.css";
+import $ from "jquery";
+import Popper from "popper.js";
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 import axios from "axios";
-import {Button } from 'react-bootstrap';
-import Spacer from 'react-add-space';
-import './TransferForm.css';
+import { Button } from "react-bootstrap";
+import Spacer from "react-add-space";
+import "./TransferForm.css";
 
 class TransferForm extends Component {
   constructor(props) {
@@ -74,22 +74,18 @@ class TransferForm extends Component {
 
   render() {
     return (
-      <div className="col-md-4 col-md-offset-4" align='center'>
+      <div align="center" id="wrap">
         <br />
-        <div id="form">
-        <form onSubmit={this.onSubmit} id="mssg">
-        <div id="rec">
-          <label>Recipient :  </label>
-            <input
+        <form onSubmit={this.onSubmit} id="trans">
+          <label>Recipient</label>
+          <input
             type="text"
             name="recipient"
             value={this.state.recipient}
             onChange={this.onChange}
             required
-            />
-        </div>
-        <div id = "am">
-          <label>Amount :  </label>
+          />
+          <label>Amount</label>
           <input
             type="number"
             name="amount"
@@ -97,19 +93,19 @@ class TransferForm extends Component {
             onChange={this.onChange}
             required
           />
-        </div>
-        <Spacer amount={1} /> 
-        <div id="buts">
-          <button onClick={this.verify} type="button" class= "btn btn-success">Verify</button>
-          {"        "}
-          <button type="submit" class="btn btn-success">Submit</button>
-          <Spacer amount={8} /> 
-          <button type="button" class="btn btn-outline-danger">Cancel</button>
-        </div>
+          <button onClick={this.verify} type="button" class="btn btn-success">
+            Verify
+          </button>
+          <button type="submit" class="btn btn-success">
+            submit
+          </button>
+          <Spacer amount={8} />
+          <button type="button" class="btn btn-outline-danger">
+            Cancel
+          </button>
           <br />
           {this.state.message}
         </form>
-        </div>
       </div>
     );
   }

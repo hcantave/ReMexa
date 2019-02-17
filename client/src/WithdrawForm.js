@@ -66,7 +66,7 @@ class WithdrawForm extends Component {
   };
   render() {
     return (
-      <div>
+      <div id="withdraw" style={{ display: "none" }}>
         <h3>Withdraw your money from U.S.</h3>
         <form>
           <label>Amount</label>
