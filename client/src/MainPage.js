@@ -5,7 +5,7 @@ import Popper from 'popper.js';
 import React, { Component } from "react";
 import axios from "axios";
 import TransferForm from "./TransferForm";
-import { Button } from 'react-bootstrap';
+
 
 class MainPage extends Component {
   constructor(props) {
