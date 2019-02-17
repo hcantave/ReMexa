@@ -6,6 +6,7 @@ import ReactDOM from "react-dom";
 import axios from "axios";
 import TransferForm from "./TransferForm";
 import Spacer from "react-add-space";
+import './MainPage.css';
 
 class MainPage extends Component {
   constructor(props) {
@@ -31,9 +32,9 @@ class MainPage extends Component {
   render() {
     return (
       <div className="col-md-4 col-md-offset-4" align="center">
-        <h1 align="center">Hello {this.state.username}</h1>
+        <h1 align="center" id="prompt">Hello {this.state.username}</h1>
         <Spacer amount={8} />
-        <p align="center">
+        <p align="center" id="mssg">
           Your current balance is {this.state.balance} dollars
         </p>
 

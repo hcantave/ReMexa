@@ -1,12 +1,36 @@
-#wrap{
+#buts{
+        margin: auto;
+        padding-left: 260px;
+        text-align: center;
+        white-space: nowrap;
+        font-weight: bold;
+ 
+}
+#am{
     margin: auto;
-    width: 60%;
-    border: 4 px solid #73AD21;
-    padding-top: 60px;
-    align-self: center;
+    padding-left: 250px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
 }
 
+#rec{
+        padding-left: 238px;
+        text-align: center;
+        white-space: nowrap;
+        font-weight: bold;
+}
 body{
     background-color: white;
 }
+
+#form{
+    padding-left: 260px;
+    text-align: center;
+    font-size: 30px;
+    white-space: nowrap;
+    margin:auto;
+    font-size: 60px;
+}
+
 
