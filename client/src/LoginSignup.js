@@ -80,7 +80,7 @@ class LoginSignup extends Component {
 
   render() {
     return (
-      <div className="container" class ="col-md-4 col-md-offset-4">
+      <div className="container" className ="col-md-4 col-md-offset-4">
         <form onSubmit={this.onSubmitLogin} id="login-page">
           <h2 className="form-signin-heading">Please Login in</h2>
           <label>Username</label>
@@ -100,9 +100,9 @@ class LoginSignup extends Component {
             onChange={this.onChange}
             required
           />
-          <button type="submit" class="btn btn-success">Login</button>
+          <button type="submit" className="btn btn-success">Login</button>
           <p>
-            <button onClick={this.showSignUpForm} class="btn btn-success btn-lg">Sign up</button> now!
+            <button onClick={this.showSignUpForm} className="btn btn-success btn-lg">Sign up</button> now!
           </p>
         </form>
         <form
@@ -128,9 +128,9 @@ class LoginSignup extends Component {
             onChange={this.onChange}
             required 
           />
-          <button type="submit" class="btn btn-success btn-lg">Signup</button>
+          <button type="submit" className="btn btn-success btn-lg">Signup</button>
           <p>
-            Have a account?<button onClick={this.showloginForm} class="btn btn-success">Login</button>{" "}
+            Have a account?<button onClick={this.showloginForm} className="btn btn-success">Login</button>{" "}
             now!
           </p>
         </form>

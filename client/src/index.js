@@ -10,7 +10,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { Switch } from "react-router";
 
 ReactDOM.render(
-  <div>
+  <div className="col-md-4 col-md-offset-4">
     <BrowserRouter>
       <Switch>
         <Route path="/MainPage" exact component={MainPage} />
