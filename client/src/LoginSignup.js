@@ -89,7 +89,7 @@ class LoginSignup extends Component {
   render() {
     return (
       <style>
-        body {
+        .center {
           margin: auto;
           width: 60%;
           border:  3px solid #73AD21;
