@@ -91,9 +91,9 @@ class TransferForm extends Component {
             onChange={this.onChange}
             required
           />
-          <button onClick={this.verify} class= "btn btn-success">Verify</button>
+          <button onClick={this.verify} type="button" class= "btn btn-success">Verify</button>
           <button type="submit" class="btn btn-success">submit</button>
-          <button class="btn btn-outline-danger">Cancel</button>
+          <button type="button" class="btn btn-outline-danger">Cancel</button>
           <br />
           {this.state.message}
         </form>

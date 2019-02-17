@@ -4,7 +4,8 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import React, { Component } from "react";
 import axios from "axios";
-import { Button } from 'react-bootstrap';
+import { button } from 'react-bootstrap';
+
 
 class LoginSignup extends Component {
   constructor() {
@@ -107,7 +108,7 @@ class LoginSignup extends Component {
           />
           <button type="submit" className="btn btn-success">Login</button>
           <p>
-            <button onClick={this.showSignUpForm} className="btn btn-success btn-lg">Sign up</button> now!
+            <button onClick={this.showSignUpForm} type ="button" className="btn btn-success btn-lg">Sign up</button> now!
           </p>
         </form>
         <form
@@ -135,7 +136,7 @@ class LoginSignup extends Component {
           />
           <button type="submit" className="btn btn-success btn-lg">Signup</button>
           <p>
-            Have a account?<button onClick={this.showloginForm} className="btn btn-success">Login</button>{" "}
+            Have a account?<button onClick={this.showloginForm} type ="button" className="btn btn-success">Login</button>{" "}
             now!
           </p>
         </form>
