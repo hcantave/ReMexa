@@ -43,12 +43,14 @@ body {
 }
 
 #usercred{
+    margin: auto;
     padding-left: 300px;
     text-align: center;
     white-space: nowrap;
 }
 
 #passcred{
+    margin:auto;
     padding-left: 300px;
     text-align: center;
     white-space: nowrap;

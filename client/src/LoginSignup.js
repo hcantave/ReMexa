@@ -112,6 +112,7 @@ class LoginSignup extends Component {
             required
           />
           </div>
+          <Spacer amount={4} />
           <div id="loginbutton">
           {"  "}<button type="submit" className="btn btn-success text-center" >Login</button> {"  "}
           </div>
