@@ -156,6 +156,7 @@ class LoginSignup extends Component {
             required 
           />
           </div>
+            <img src="mexicoflag.png" height="30" width="30"></img>
           <br></br>
           <div id="loginbutton">
           <button type="submit" className="btn btn-success btn-lg" id="button">Signup</button>
