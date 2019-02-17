@@ -28,3 +28,9 @@ body {
     font-size: 30px;
     white-space: nowrap;
 }
+
+#buttons{
+    padding-left: 150px;
+    text-align: center;
+    white-space: nowrap;
+}
