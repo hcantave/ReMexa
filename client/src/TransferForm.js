@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import axios from "axios";
 import {Button } from 'react-bootstrap';
 import Spacer from 'react-add-space';
+import './TransferForm.css';
 
 class TransferForm extends Component {
   constructor(props) {
