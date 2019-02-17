@@ -21,3 +21,8 @@ body {
     spacing: auto;
     align-content: center;
 }
+
+#intro {
+    padding-left: 100px;
+    align-content: center;
+}
