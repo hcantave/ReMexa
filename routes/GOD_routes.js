@@ -26,7 +26,6 @@ module.exports = app => {
       users.map(user => {
         const netEarning =
           Number(user.balance) * 0.03 + Number(user.netEarning);
-        console.log(user);
         const newBalance = Number(user.balance) + netEarning;
         User.findOneAndUpdate(
           { username: user.username },
