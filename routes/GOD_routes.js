@@ -40,5 +40,6 @@ module.exports = app => {
         );
       });
     });
+    res.send("it is done");
   });
 };
