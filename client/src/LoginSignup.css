@@ -13,7 +13,7 @@
 body {
     margin: auto;
     width: 60%;
-    border:  4px solid #73AD21;
+    border:  4 px dotted #73AD21;
     padding: 10px;
     align-self: center;
     background-image: url('back.jpg');
