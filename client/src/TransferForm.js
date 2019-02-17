@@ -66,7 +66,7 @@ class TransferForm extends Component {
 
   render() {
     return (
-      <div>
+      <div class="col-md-4 col-md-offset-4">
         <br />
         <form onSubmit={this.onSubmit}>
           <label>Recipient</label>
@@ -85,9 +85,9 @@ class TransferForm extends Component {
             onChange={this.onChange}
             required
           />
-          <button onClick={this.verify}>Verify</button>
-          <button type="submit">submit</button>
-          <button>Cancel</button>
+          <button onClick={this.verify} class= "btn btn-success">Verify</button>
+          <button type="submit" class="btn btn-success">submit</button>
+          <button class="btn btn-outline-danger">Cancel</button>
           <br />
           {this.state.message}
         </form>

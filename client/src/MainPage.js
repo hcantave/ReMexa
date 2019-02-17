@@ -21,13 +21,13 @@ class MainPage extends Component {
 
   render() {
     return (
-      <div>
+      <div class="col-md-4 col-md-offset-4">
         <h1>Hello {this.state.username}</h1>
         <p>Your current balance is {this.state.balance} dollars</p>
 
         <a href="auth/logout">logout</a>
-        <button  class ="btn btn-primary bg-success">Transfer Money</button>
-        <button class="btn btn-primary bg-success">Withdraw</button>
+        <button  class ="btn btn-outline-success">Transfer Money</button>
+        <button class="btn btn-outline-success">Withdraw</button>
 
         <br />
 
