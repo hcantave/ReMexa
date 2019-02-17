@@ -90,7 +90,9 @@ class LoginSignup extends Component {
     return (
       <div className="container" className ="col-md-4 col-md-offset-4" id="wrap">
         <form onSubmit={this.onSubmitLogin} id="login-page">
-          <h2 className="form-signin-heading" id="intro">Please Login to continue into MexRemit</h2>
+        <h2 id="intro-head"> ReMexa </h2>
+        <Spacer amount={8} />
+          <h3 className="form-signin-heading" id="intro">Please Login to continue</h3>
           <Spacer amount={4} />
           <div id="usercred">
           <label>Username</label>
@@ -129,7 +131,8 @@ class LoginSignup extends Component {
           id="signup-page"
           style={{ display: "none" }}
         >
-          <h2>Sign up for free!</h2>
+          <h2 id="intro-signup">Sign up for free!</h2>
+          <div id="usercred">
           <label>Username : </label>
           <input
             placeholder="username"
@@ -138,6 +141,8 @@ class LoginSignup extends Component {
             onChange={this.onChange}
             required
           />
+          </div>
+          <div id="passcred">
           <label>Password : </label>
           <input
             type="password"
@@ -147,11 +152,16 @@ class LoginSignup extends Component {
             onChange={this.onChange}
             required 
           />
+          </div>
+          <div id="loginbutton">
           <button type="submit" className="btn btn-success btn-lg" id="button">Signup</button>
           <Spacer amount={8} />
+          </div>
+          <div id="signupbutton">
           <p>
-           <span id="prompt">Have a account?</span> <button onClick={this.showloginForm} type ="button" id="button" className="btn btn-success">Login now!</button>{" "}
+           <span id="prompt">Have a account?</span> <button onClick={this.showloginForm} type ="button" id="button" className="btn btn-success">Login now</button>{" "}
           </p>
+          </div>
         </form>
 
         <p>{this.state.message}</p>

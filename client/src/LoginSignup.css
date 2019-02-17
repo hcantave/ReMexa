@@ -14,7 +14,7 @@ body {
     margin: auto;
     width: 60%;
     border: 4 px dotted #73AD21;
-    padding-top: 200px;
+    padding-top: 60px;
     align-self: center;
     background-image: url('back.jpg');
 }
@@ -26,11 +26,30 @@ body {
 }
 
 #intro {
-    padding-left: 150px;
+    padding-left: 230px;
     text-align: center;
     font-size: 30px;
     white-space: nowrap;
 }
+
+#intro-head {
+    padding-left: 285px;
+    text-align: center;
+    font-size: 30px;
+    white-space: nowrap;
+    margin:auto;
+    font-size: 60px;
+}
+
+#intro-signup {
+    padding-left: 160px;
+    text-align: center;
+    font-size: 30px;
+    white-space: nowrap;
+    margin:auto;
+    font-size: 60px;
+}
+
 
 
 #loginbutton{
