@@ -1,3 +1,7 @@
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
 import React, { Component } from "react";
 import axios from "axios";
 
