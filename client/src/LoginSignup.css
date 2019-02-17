@@ -16,7 +16,7 @@ body {
     border:  4px solid #73AD21;
     padding: 10px;
     align-self: center;
-    background-color: #A4F6A5;
+    background-image: url('back.jpg');
 }
 #prompt{
     border: 2 px solid green;
