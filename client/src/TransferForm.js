@@ -74,17 +74,17 @@ class TransferForm extends Component {
 
   render() {
     return (
-      <div className="col-md-4 col-md-offset-4" align='center'>
+      <div className="col-md-4 col-md-offset-4" align='center' id="wrap">
         <br />
-        <form onSubmit={this.onSubmit}>
+        <form onSubmit={this.onSubmit} id="wrap">
           <label>Recipient</label>
-          <input
+            <input
             type="text"
             name="recipient"
             value={this.state.recipient}
             onChange={this.onChange}
             required
-          />
+            />
           <label>Amount</label>
           <input
             type="number"
