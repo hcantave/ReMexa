@@ -1,6 +1,6 @@
 #buts{
         margin: auto;
-        padding-left: 260px;
+        padding-left: 10px;
         text-align: center;
         white-space: nowrap;
         font-weight: bold;
@@ -8,29 +8,20 @@
 }
 #am{
     margin: auto;
-    padding-left: 250px;
+    padding-left: 12px;
     text-align: center;
     white-space: nowrap;
     font-weight: bold;
 }
 
 #rec{
-        padding-left: 238px;
+        padding-left: 1px;
         text-align: center;
         white-space: nowrap;
         font-weight: bold;
 }
 body{
     background-color: white;
-}
-
-#form{
-    padding-left: 260px;
-    text-align: center;
-    font-size: 30px;
-    white-space: nowrap;
-    margin:auto;
-    font-size: 60px;
 }
 
 

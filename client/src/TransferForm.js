@@ -101,6 +101,7 @@ class TransferForm extends Component {
         <Spacer amount={1} /> 
         <div id="buts">
           <button onClick={this.verify} type="button" class= "btn btn-success">Verify</button>
+          {"        "}
           <button type="submit" class="btn btn-success">submit</button>
           <Spacer amount={8} /> 
           <button type="button" class="btn btn-outline-danger">Cancel</button>
