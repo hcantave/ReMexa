@@ -8,3 +8,9 @@
     padding: auto;
     border-spacing: auto;
 }
+
+#prompt{
+    border: 2 px solid green;
+    padding: auto;
+    spacing: auto;
+}

@@ -108,10 +108,10 @@ class LoginSignup extends Component {
             onChange={this.onChange}
             required
           />
-          <button type="submit" className="btn btn-success" id="button" >Login</button>
+          <button type="submit" className="btn btn-success" id="button" >Login</button> {"  "}
           <Spacer amount={8} />
           <p>
-            <button onClick={this.showSignUpForm} type ="button" id="button" className="btn btn-success btn-lg">Sign up</button> now!
+            <button onClick={this.showSignUpForm} type ="button" id="button" className="btn btn-success btn-lg">Sign up now!</button> 
           </p>
         </form>
         <form
@@ -140,8 +140,7 @@ class LoginSignup extends Component {
           <button type="submit" className="btn btn-success btn-lg" id="button">Signup</button>
           <Spacer amount={8} />
           <p>
-            Have a account?<button onClick={this.showloginForm} type ="button" id="button" className="btn btn-success">Login</button>{" "}
-            now!
+           <span id="prompt">Have a account?</span> <button onClick={this.showloginForm} type ="button" id="button" className="btn btn-success">Login now!</button>{" "}
           </p>
         </form>
 
