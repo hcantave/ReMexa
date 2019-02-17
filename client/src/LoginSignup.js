@@ -95,7 +95,7 @@ class LoginSignup extends Component {
           <h3 className="form-signin-heading" id="intro">Please Login to continue</h3>
           <Spacer amount={4} />
           <div id="usercred">
-          <label>Username</label>
+          <label>Username :  </label>
           <input
             placeholder="username"
             name="username"
@@ -103,9 +103,10 @@ class LoginSignup extends Component {
             onChange={this.onChange}
             required
           />
+          <Spacer amount={1} />
           </div>
           <div id="passcred">
-          <label>Password</label>
+          <label>Password :  </label>
           <input
             type="password"
             placeholder="Password"
@@ -132,6 +133,7 @@ class LoginSignup extends Component {
           style={{ display: "none" }}
         >
           <h2 id="intro-signup">Sign up for free!</h2>
+          <Spacer amount={4} />
           <div id="usercred">
           <label>Username : </label>
           <input
@@ -142,6 +144,7 @@ class LoginSignup extends Component {
             required
           />
           </div>
+          <Spacer amount={1} />
           <div id="passcred">
           <label>Password : </label>
           <input
@@ -159,7 +162,7 @@ class LoginSignup extends Component {
           </div>
           <div id="signupbutton">
           <p>
-           <span id="prompt">Have a account?</span> <button onClick={this.showloginForm} type ="button" id="button" className="btn btn-success">Login now</button>{" "}
+           <span id="prompt" id="sprompt">Have a account?</span> <button onClick={this.showloginForm} type ="button" id="button" className="btn btn-success">Login now</button>{" "}
           </p>
           </div>
         </form>

@@ -42,7 +42,7 @@ body {
 }
 
 #intro-signup {
-    padding-left: 160px;
+    padding-left: 190px;
     text-align: center;
     font-size: 30px;
     white-space: nowrap;
@@ -71,7 +71,7 @@ body {
     padding-left: 295px;
     text-align: center;
     white-space: nowrap;
-    text-emphasis: bold;
+    font-weight: bold;
 }
 
 #passcred{
@@ -79,5 +79,9 @@ body {
     padding-left: 300px;
     text-align: center;
     white-space: nowrap;
-    text-emphasis: bold;
+    font-weight: bold;
+}
+
+#sprompt{
+    font-weight: bold;
 }
