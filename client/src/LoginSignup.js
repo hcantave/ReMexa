@@ -130,7 +130,7 @@ class LoginSignup extends Component {
           style={{ display: "none" }}
         >
           <h2>Sign up for free!</h2>
-          <label>Username</label>
+          <label>Username : </label>
           <input
             placeholder="username"
             name="username"
@@ -138,7 +138,7 @@ class LoginSignup extends Component {
             onChange={this.onChange}
             required
           />
-          <label>Password</label>
+          <label>Password : </label>
           <input
             type="password"
             placeholder="Password"
