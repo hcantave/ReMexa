@@ -50,7 +50,8 @@ module.exports = app => {
         new User({
           username: username,
           password: password,
-          balance: 0
+          balance: 0,
+          netEarning: 0
         })
           .save()
           .then(user =>
