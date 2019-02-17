@@ -91,6 +91,7 @@ class LoginSignup extends Component {
       <div className="container" className ="col-md-4 col-md-offset-4" id="wrap">
         <form onSubmit={this.onSubmitLogin} id="login-page">
           <h2 className="form-signin-heading" id="intro">Please Login to continue into MexRemit</h2>
+          <div id="cred">
           <label>Username</label>
           <input
             placeholder="username"
@@ -108,6 +109,7 @@ class LoginSignup extends Component {
             onChange={this.onChange}
             required
           />
+          </div>
           <div id="loginbutton">
           {"  "}<button type="submit" className="btn btn-success text-center" >Login</button> {"  "}
           </div>
