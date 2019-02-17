@@ -108,10 +108,14 @@ class LoginSignup extends Component {
             onChange={this.onChange}
             required
           />
-          {"  "}<button type="submit" className="btn btn-success text-center" id="loginbutton" >Login</button> {"  "}
+          <div id="loginbutton">
+          {"  "}<button type="submit" className="btn btn-success text-center" >Login</button> {"  "}
+          </div>
           <Spacer amount={2} />
           <p>
-            <button onClick={this.showSignUpForm} type ="button" id="signupbutton" className="btn btn-success btn-lg text-center">Sign up now</button> 
+          <div id="signupbutton">
+            <button onClick={this.showSignUpForm} type ="button" className="btn btn-success btn-lg text-center">Sign up now</button> 
+          </div>
           </p>
         </form>
         <form
