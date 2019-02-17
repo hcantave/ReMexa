@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import axios from "axios";
 import { button } from 'react-bootstrap';
 import './LoginSignup.css';
+import Spacer from 'react-add-space';
 
 
 class LoginSignup extends Component {
@@ -108,6 +109,7 @@ class LoginSignup extends Component {
             required
           />
           <button type="submit" className="btn btn-success" id="button" >Login</button>
+          <Spacer amount={2} />
           <p>
             <button onClick={this.showSignUpForm} type ="button" id="button" className="btn btn-success btn-lg">Sign up</button> now!
           </p>
@@ -136,6 +138,7 @@ class LoginSignup extends Component {
             required 
           />
           <button type="submit" className="btn btn-success btn-lg" id="button">Signup</button>
+          <Spacer amount={2} />
           <p>
             Have a account?<button onClick={this.showloginForm} type ="button" id="button" className="btn btn-success">Login</button>{" "}
             now!

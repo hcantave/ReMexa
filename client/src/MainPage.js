@@ -27,12 +27,14 @@ class MainPage extends Component {
 
   render() {
     return (
-      <div className="col-md-4 col-md-offset-4">
+      <div className="col-md-4 col-md-offset-4" align='center'>
         <h1 align='center'>Hello {this.state.username}</h1>
+        <Spacer amount={2} />
         <p align='center'>Your current balance is {this.state.balance} dollars</p>
 
         <a href="auth/logout">logout</a>
         <button  type ="button" className ="btn btn-outline-success">Transfer Money</button>
+        <Spacer amount={2} />
         <button type="button" className="btn btn-outline-success">Withdraw</button>
 
         <br />
