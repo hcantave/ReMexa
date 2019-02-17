@@ -90,7 +90,7 @@ class LoginSignup extends Component {
     return (
       <div className="container" className ="col-md-4 col-md-offset-4" id="wrap">
         <form onSubmit={this.onSubmitLogin} id="login-page">
-          <h2 className="form-signin-heading">Please Login in</h2>
+          <h2 className="form-signin-heading" align='center'>Please Login to continue into MexRemit</h2>
           <label>Username</label>
           <input
             placeholder="username"
@@ -111,7 +111,7 @@ class LoginSignup extends Component {
           <button type="submit" className="btn btn-success" id="button" >Login</button> {"  "}
           <Spacer amount={8} />
           <p>
-            <button onClick={this.showSignUpForm} type ="button" id="button" className="btn btn-success btn-lg">Sign up now!</button> 
+            <button onClick={this.showSignUpForm} type ="button" id="button" className="btn btn-success btn-lg">Sign up now</button> 
           </p>
         </form>
         <form
