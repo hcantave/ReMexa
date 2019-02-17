@@ -3,7 +3,6 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import React from "react";
 import ReactDOM from 'react-dom';
-import ReactDOM from "react-dom";
 import MainPage from "./MainPage";
 import LoginSignup from "./LoginSignup";
 import * as serviceWorker from "./serviceWorker";
