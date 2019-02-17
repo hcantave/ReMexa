@@ -7,6 +7,7 @@ import axios from "axios";
 import TransferForm from "./TransferForm";
 import Spacer from "react-add-space";
 import './MainPage.css';
+import WithdrawForm from "./WithdrawForm";
 
 class MainPage extends Component {
   constructor(props) {
@@ -51,6 +52,8 @@ class MainPage extends Component {
         <br />
 
         <TransferForm />
+        <br/>
+        <WithdrawForm/>
       </div>
     );
   }
