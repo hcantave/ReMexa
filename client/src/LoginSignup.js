@@ -88,6 +88,7 @@ class LoginSignup extends Component {
 
   render() {
     return (
+<<<<<<< HEAD
       <style>
         .center {
           margin: auto;
@@ -96,6 +97,8 @@ class LoginSignup extends Component {
           padding: 10px;
         }
       </style>
+=======
+>>>>>>> 6c0fc5a8198b2a3ec628d97a40bfa3b62e37cd54
       <div className="container" className ="col-md-4 col-md-offset-4" id="wrap">
         <form onSubmit={this.onSubmitLogin} id="login-page">
           <h2 className="form-signin-heading" align='center'>Please Login to continue into MexRemit</h2>
@@ -117,7 +120,7 @@ class LoginSignup extends Component {
             required
           />
           <button type="submit" className="btn btn-success" id="button" >Login</button> {"  "}
-          <Spacer amount={8} />
+          <Spacer amount={4} />
           <p>
             <button onClick={this.showSignUpForm} type ="button" id="button" className="btn btn-success btn-lg">Sign up now</button> 
           </p>
