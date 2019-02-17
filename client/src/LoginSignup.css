@@ -52,6 +52,7 @@ body {
     padding-left: 295px;
     text-align: center;
     white-space: nowrap;
+    text-emphasis: bold;
 }
 
 #passcred{
@@ -59,4 +60,5 @@ body {
     padding-left: 300px;
     text-align: center;
     white-space: nowrap;
+    text-emphasis: bold;
 }
