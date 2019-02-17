@@ -1,11 +1,13 @@
 .wrap {
-    width: 50%;
     margin: 100px;
     padding: 100px;
     text-align: center;
 }
 
-
+#button {
+    padding: auto;
+    border-spacing: auto;
+}
 body {
     margin: auto;
     width: 60%;
@@ -16,11 +18,4 @@ body {
     border: 2 px solid green;
     padding: auto;
     spacing: auto;
-}
-
-#heading{
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
 }
