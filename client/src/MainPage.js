@@ -28,8 +28,8 @@ class MainPage extends Component {
   render() {
     return (
       <div className="col-md-4 col-md-offset-4">
-        <h1>Hello {this.state.username}</h1>
-        <p>Your current balance is {this.state.balance} dollars</p>
+        <h1 align='center'>Hello {this.state.username}</h1>
+        <p align='center'>Your current balance is {this.state.balance} dollars</p>
 
         <a href="auth/logout">logout</a>
         <button  type ="button" className ="btn btn-outline-success">Transfer Money</button>

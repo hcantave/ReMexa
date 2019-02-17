@@ -72,7 +72,7 @@ class TransferForm extends Component {
 
   render() {
     return (
-      <div class="col-md-4 col-md-offset-4">
+      <div className="col-md-4 col-md-offset-4" align='center'>
         <br />
         <form onSubmit={this.onSubmit}>
           <label>Recipient</label>
