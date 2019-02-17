@@ -1,14 +1,14 @@
-pragma solidity ^0.5.0 ;
+pragma solidity ^0.4.21 ;
 
 contract Remittance {
    address public manager;
    address public sender;
-   address payable public recipient;
-   address payable public eth_invest_pool;
+   address public recipient;
+   address public eth_invest_pool;
    uint256 amountToinvest;
   
 
-   constructor() public payable{
+   function Remittance () payable public {
        manager = msg.sender;
        emit ContractCreated(manager, msg.value);
    }
@@ -24,7 +24,7 @@ contract Remittance {
        return address(this).balance;
    }
 
-   function send(address payable personTosend) payable public {
+   function send(address personTosend) payable public {
        sender = msg.sender;
        recipient = personTosend;
        recipient.transfer(address(this).balance);
@@ -47,4 +47,3 @@ contract Remittance {
    
 
 }
-
