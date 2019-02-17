@@ -5,8 +5,9 @@
 }
 
 #button {
-    padding: auto;
-    border-spacing: auto;
+    padding: 10px;
+    border-spacing: 10px;
+    align-content: center;
 }
 body {
     margin: auto;
