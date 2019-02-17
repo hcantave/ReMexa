@@ -26,8 +26,8 @@ class MainPage extends Component {
         <p>Your current balance is {this.state.balance} dollars</p>
 
         <a href="auth/logout">logout</a>
-        <button>Transfer Money</button>
-        <button>Withdraw</button>
+        <button  class ="btn btn-primary">Transfer Money</button>
+        <button class="btn btn-primary">Withdraw</button>
 
         <br />
 
