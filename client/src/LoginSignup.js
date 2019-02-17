@@ -156,6 +156,7 @@ class LoginSignup extends Component {
             required 
           />
           </div>
+          <br></br>
           <div id="loginbutton">
           <button type="submit" className="btn btn-success btn-lg" id="button">Signup</button>
           <Spacer amount={8} />

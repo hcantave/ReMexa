@@ -2,7 +2,7 @@
     margin: 100px;
     text-align: center;
     align-self: center;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 #button {
@@ -14,7 +14,7 @@ body {
     margin: auto;
     width: 60%;
     border: 4 px dotted #73AD21;
-    padding-top: 60px;
+    padding-top: 40px;
     align-self: center;
     background-image: url('back.jpg');
 }
@@ -26,14 +26,14 @@ body {
 }
 
 #intro {
-    padding-left: 230px;
+    padding-left: 180px;
     text-align: center;
     font-size: 30px;
     white-space: nowrap;
 }
 
 #intro-head {
-    padding-left: 285px;
+    padding-left: 220px;
     text-align: center;
     font-size: 30px;
     white-space: nowrap;
@@ -42,7 +42,7 @@ body {
 }
 
 #intro-signup {
-    padding-left: 190px;
+    padding-left: 140px;
     text-align: center;
     font-size: 30px;
     white-space: nowrap;
@@ -53,14 +53,14 @@ body {
 
 
 #loginbutton{
-    padding-left: 330px;
+    padding-left: 280px;
     text-align: center;
     margin:auto;
     white-space: nowrap;
 }
 
 #signupbutton{
-    padding-left: 300px;
+    padding-left: 250px;
     margin:auto;
     text-align: center;
     white-space: nowrap;
@@ -68,7 +68,7 @@ body {
 
 #usercred{
     margin: auto;
-    padding-left: 295px;
+    padding-left: 220px;
     text-align: center;
     white-space: nowrap;
     font-weight: bold;
@@ -76,7 +76,7 @@ body {
 
 #passcred{
     margin:auto;
-    padding-left: 300px;
+    padding-left: 225px;
     text-align: center;
     white-space: nowrap;
     font-weight: bold;
