@@ -26,4 +26,5 @@ body {
     padding-left: 330px;
     text-align: center;
     font-size: 30px;
+    white-space: nowrap;
 }
