@@ -42,7 +42,13 @@ body {
     white-space: nowrap;
 }
 
-#cred{
+#usercred{
+    padding-left: 300px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#passcred{
     padding-left: 300px;
     text-align: center;
     white-space: nowrap;
