@@ -4,5 +4,6 @@
 }
 
 #button {
-    padding: 25px;
+    padding: auto;
+    border-spacing: auto;
 }
