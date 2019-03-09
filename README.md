@@ -10,7 +10,7 @@
 - To facilitate US-Mexican remittances.
 - To empower immigrants, especially Mexican immigrants, with access to financial services.
 - Edge out current market share like WU, Remitly, etc...
-- Develop a model that brings value back to the user by using x% fee to invest.
+- Develop a model that brings value back to the user.
 
 ###
 - Use Ethereum smart contracts.
